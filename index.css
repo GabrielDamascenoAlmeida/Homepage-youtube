@@ -1,0 +1,42 @@
+main {
+    margin: 0;
+    padding: 0;
+}
+
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.menu-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    background-color: #030303;
+    color: white;
+}
+
+.menu-esquerdo ul {
+    margin-left: -10px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.menu-esquerdo ul li {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 30px;
+    list-style: none;
+    transition: all 0.2s ease;
+    border-radius: 9px;
+    padding: 5px;
+}
+
+.menu-esquerdo ul li:hover {
+    background-color: #272727;
+}
