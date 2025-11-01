@@ -8,7 +8,7 @@ body {
 
 section {
     width: 100%;
-    background-color: aqua;
+    
 }
 
 header {
@@ -174,26 +174,49 @@ header {
     gap: 20px;
     padding: 20px;
     width: 100%;
+    float: right;
 }
 
 .menu-esquerdo {
     display: flex;
     flex-direction: column;
-    width: 230px;
-    background-color: #030303;
+    width: 260px;
+    background-color: #0F0F0F;
     color: white;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.menu-esquerdo::-webkit-scrollbar {
+  width: 8px;
+}
+.menu-esquerdo::-webkit-scrollbar-track {
+  background: #2D2D2D;
+}
+
+.menu-esquerdo::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
 }
 
 .menu-esquerdo ul {
-    margin-left: -16px;
     text-decoration: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #2D2D2D;
+    padding: 0 0 10px 20px;
+}
+
+ul h2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 .menu-esquerdo ul li {
     display: flex;
     align-items: center;
-    width: 170px;
+    gap: 16px;
+    width: 200px;
     height: 30px;
     list-style: none;
     transition: all 0.2s ease;
@@ -201,7 +224,49 @@ header {
     padding: 8px;
 }
 
+.menu-esquerdo ul li img {
+    width: 25px;
+    height: 25px;
+}
+
 .menu-esquerdo ul li:hover {
     background-color: #272727;
     cursor: pointer;
 }
+
+.last {
+    margin-top: -30px;
+}
+
+.corpo-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-topo-videos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #FAFAFA;
+    background-color: #0F0F0F;
+    width: 1500px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+#barra-topo-videos div {
+    background-color: #222222;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 9px 26px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#barra-topo-videos div:hover {
+    background-color: #FAFAFA;
+    color: #0F0F0F;
+    cursor: pointer;
+}
+
