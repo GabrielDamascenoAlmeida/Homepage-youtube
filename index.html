@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recriando a home page do youtube</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Recriando a home page do youtube</title>
+    
 </head>
 <body>
     <main>
         <section>
             <header>
-                
+                <div class="funcoes" id="inicio">
+                    <div class="round-btn" id="div_hamburger"><img src="./images/Vector.png" alt="menu hamburger" id="hamburger"></div>
+                    <div id="div-logo" style="cursor: pointer;"><img src="./images/YouTube_dark_logo_2017.svg.png" alt="Logo do youtube" id="logo-youtube"></div>
+                </div>
+                <div class="funcoes" id="div-centro">
+                    <div class="group">
+                        <div class="div-pesquisa">
+                            <input type="text" placeholder="Pesquisar" id="pesquisa">
+                            <button id="keyboard" style="cursor: pointer;">
+                                <img src="./images/keyboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                            </button>
+                        </div>
+                        <button id="lupa" style="cursor: pointer;"><img src="./images/Vector (1).png" alt="icone de lupa"></button>
+                    </div>
+                    <div class="round-btn" id="micro-fone"><img src="./images/Group.png" alt="micro fone"></div>
+                </div>
+                <div class="funcoes" id="fim">
+                    <button id="btn-criar"><img src="./images/ic_baseline-plus.png" alt="" id="plus"><p>Criar</p></button>
+                    <div class="round-btn" id="notify"><img src="./images/Vector (2).png" alt=""></div>
+                    <img src="./images/G.png" alt="Foto de perfil do usuário" style="cursor: pointer;">
+                </div>
             </header>
+            <iron-selector selected="0">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+            </iron-selector>
             <div class="menu-esquerdo">
                 <ul >
                     <h2>Explorar</h2>

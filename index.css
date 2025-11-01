@@ -1,8 +1,172 @@
-main {
+body {
     margin: 0;
-    padding: 0;
+    padding: 0; /* É uma boa prática zerar o padding também */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
+section {
+    width: 100%;
+    background-color: aqua;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F0F0F;
+}
+
+#inicio{
+    margin-left: 30px;
+}
+
+#fim {
+    margin-right: 30px;
+    width: 200px;
+    justify-content: space-between;
+}
+
+#plus {
+    width: 28px;
+    height: 28px;
+}
+
+.funcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#div-hamburger {
+    padding: 8px;
+}
+
+
+#hamburger {
+    height: 15px;
+    width: 20px;
+}
+
+#div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 56px;
+    padding: 18px, 14px, 18px, 16px ;
+}
+
+#logo-youtube {
+    width: 93px;
+    height: 20px;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-centro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 705px;
+    height: 40px;
+}
+
+.div-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 536px;
+    height:38px;
+    padding: 0 4px 0 16px;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+    margin: 0 0 0 32px;
+}
+
+#pesquisa {
+    width: 484px;
+    color: #FAFAFA;
+    border: none;
+    background-color: #121212;
+    padding: 1px 0px;
+}
+
+#keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+}
+
+#keyboard img{
+    width: 24px;
+    height: 24px;
+}
+
+#lupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    background-color: #202020;
+    border: 1px solid #303030;
+    border-radius: 0 40px 40px 0px;
+}
+
+#micro-fone  {
+    background-color: #222222;
+}
+#micro-fone:hover, #btn-criar:hover {
+    background-color: #3D3D3D;
+}
+
+#btn-criar {
+    width: 84px;
+    height: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222222;
+    color: #FAFAFA;
+    border-radius: 18px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.round-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+}
+
+.round-btn:hover, #div_hamburger:hover, #notify:hover {
+    background-color: #222222;
+    cursor: pointer;
+}
+
+
+/* Termino do estilo do header */
 
 .video-section {
     display: flex;
@@ -21,7 +185,7 @@ main {
 }
 
 .menu-esquerdo ul {
-    margin-left: -10px;
+    margin-left: -16px;
     text-decoration: none;
     border-bottom: 1px solid white;
 }
@@ -34,9 +198,10 @@ main {
     list-style: none;
     transition: all 0.2s ease;
     border-radius: 9px;
-    padding: 5px;
+    padding: 8px;
 }
 
 .menu-esquerdo ul li:hover {
     background-color: #272727;
+    cursor: pointer;
 }
