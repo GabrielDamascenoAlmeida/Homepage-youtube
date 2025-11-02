@@ -4,6 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: #0F0F0F;
 }
 
 section {
@@ -241,7 +242,7 @@ ul h2 {
 .corpo-principal {
     display: flex;
     flex-direction: row;
-    background-color: #121212;
+    background-color: #0f0f0f;
 }
 
 .conteudo-videos-topo {
@@ -365,4 +366,98 @@ ul h2 {
 
 #video3:hover {
     background-color: rgba(134, 182, 255, 0.5);
+}
+
+.shorts {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 16px;
+    width: 1560px;
+    height: 400px;
+    gap: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 20px;
+    width: 1520px;
+    height: 400px;
+    margin: auto;
+}
+
+.titulo-shorts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0 10px 20px;
+}
+
+.short-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px ;
+    height: 380px;
+    color: #FAFAFA;
+    margin-top: -20px;
+}
+
+.short-card > img {
+    margin-top: -29px;
+    width: 250px;
+    height: 380px;
+}
+
+.short-info {
+   align-self: flex-start;
+}
+
+.short-info h2 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.short-info p {
+    color: #AAAAAA;
+    font-size: 16px;
+}
+
+.short-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 400px;
+    height: 480px;
+    margin-top: 50px;
+}
+
+#short1:hover {
+    background-color: rgba(252, 117, 93, 0.5);
+    cursor: pointer;
+}
+
+#short2:hover {
+    background-color: rgba(238, 27, 210, 0.5);
+    cursor: pointer;
+}
+
+#short3:hover {
+    background-color: rgba(134, 182, 255, 0.5);
+    cursor: pointer;
+}
+
+#short4:hover {
+    background-color: rgba(255, 236, 65, 0.5);
+    cursor: pointer;
+}
+
+#short5:hover {
+    background-color: rgba(241, 50, 25, 0.5);
+    cursor: pointer;
 }
